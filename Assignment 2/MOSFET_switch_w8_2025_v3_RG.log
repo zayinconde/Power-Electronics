@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\zayin\OneDrive\Desktop\Power Electronics\Assignment 2\MOSFET_switch_w8_2025_v3_RG.asc
+Start Time: Mon Feb 17 10:55:59 2025
+solver = Normal
+Maximum thread count: 18
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.873 seconds.
+

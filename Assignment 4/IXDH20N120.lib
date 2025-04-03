@@ -1,0 +1,23 @@
+* PSpice Model Editor - Version 9.2.1
+
+*$
+*DEVICE=IXDH20N120,NIGBT
+
+* IXDH20N120 NIGBT model
+* updated using Model Editor release 9.2.1 on 03/03/04 at 14:06
+* The Model Editor is a PSpice product hem.
+.MODEL IXDH20N120 NIGBT
++ TAU=72.124E-9
++ KP=3.6746
++ AREA=19.000E-6
++ AGD=7.6000E-6
++ WB=117.00E-6
++ VT=6.5121
++ MUN=1.0000E6
++ MUP=400
++ BVF=9.1500
++ KF=.5005
++ CGS=10.787E-9
++ COXD=29.004E-9
++ VTD=-5
+*$

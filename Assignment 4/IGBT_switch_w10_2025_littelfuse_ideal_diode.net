@@ -1,0 +1,29 @@
+* C:\Users\zayin\OneDrive - Syddansk Universitet\Desktop\power electronics\Assignment 4\IGBT_switch_w10_2025_littelfuse_ideal_diode.asc
+V2 Node5 0 PULSE(0 10 0 1n 1n {D*T} {T})
+M1 Node3 N002 Node4 Node4 Si7336ADP
+I1 Node1 Node2 3
+V1 Node1 0 5
+R2 Node2 Node3 1m
+R3 Node4 0 1m
+D1 Node2 Node1 Didl
+RG Node5 N002 10
+Z1 Node30 N001 Node40 IXDH20N120
+R1 Node20 Node30 1m
+R4 Node40 0 1m
+R5 Node50 N001 10
+D2 Node20 Node10 Didl
+V3 Node50 0 PULSE(0 10 0 1n 1n {D*T} {T})
+V4 Node10 0 5
+I2 Node10 Node20 3
+.model D D
+.lib C:\Users\zayin\AppData\Local\LTspice\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\zayin\AppData\Local\LTspice\lib\cmp\standard.mos
+.param D = 0.45
+.param T = 10u
+.tran 1m
+.inc IXDH20N120.lib
+.model Didl D(Ron=0.0001 Roff=100G Vfwd=0)
+.backanno
+.end
